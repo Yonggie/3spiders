@@ -1,7 +1,8 @@
 import xlwt
 import os
 import json
-summary = xlwt.Workbook()
+
+summary = xlwt.Workbook(encoding='utf8')
 sheet1 = summary.add_sheet('sheet1')
 
 with open('douban.json',encoding='utf8') as f:
